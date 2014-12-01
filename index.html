@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+<meta author="Józef Sokołowski">
+<title>Józef Sokołowski</title>
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="./font/code-pro.css">
+<script src="./zepto.min.js"></script>
+<script src="./scripts.js"></script>
+
+<div class="background default on"></div>
+<div class="background github"></div>
+<div class="background gplus"></div>
+<div class="background mail"></div>
+
+<div class="intro">
+  <h1>Hi! I am Józef Sokolowski</h1>
+
+  <ul class="links">
+    <li> <a data-bg="github" href="https://github.com/qzb">Github</a>
+    <li> <a data-bg="gplus" href="https://plus.google.com/+JozefSokolowski">Google plus</a>
+    <li> <a data-bg="mail" href="javascript://" id="mail">Email</a>
+  </ul>
+</div>
+
+<script>
+  $('.links a')
+  .on('mouseover', function (ev) {
+    var bg = $(ev.target).data('bg');
+    $('.background').removeClass('on');
+    $('.background.' + bg).addClass('on');
+  })
+  .on('mouseout', function () {
+    $('.background.default').addClass('on');
+  });
+
+  $('#mail').attr('href', ['mai', 'lto:', 'hello', '@', 'qzb', '.', 'me'].join(''));
+</script>

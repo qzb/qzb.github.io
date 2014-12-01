@@ -1,0 +1,80 @@
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right:0;
+
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+
+    opacity: 1;
+    z-index: -3;
+}
+
+.background.on  {
+    z-index: -2;
+}
+
+.background.default {
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1;
+    opacity: 0;
+}
+
+.background.default.on {
+    opacity: 1;
+}
+
+.background.default {
+    background-image: url(backgrounds/default-1920.jpg);
+}
+
+.background.github {
+    background-image: url(backgrounds/github-1920.jpg);
+}
+
+.background.mail {
+    background-image: url(backgrounds/mail-1920.jpg);
+}
+
+.background.gplus {
+    background-color: #dd4b39;
+}
+
+.intro {
+    position: fixed;
+    top: 30%;
+    left: 0;
+    bottom: 0;
+    right:0;
+
+    text-align: center;
+
+    color: white;
+    font-family: 'code-pro';
+    letter-spacing: 2;
+}
+
+.links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links li {
+    display: inline;
+}
+
+.links a, .links a:hover, .links a:active, .links a:visited {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.links li:nth-child(n+2):before {
+    content: '•';
+    margin: 0 10px;
+}
