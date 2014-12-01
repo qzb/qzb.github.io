@@ -20,17 +20,3 @@
     <li> <a data-bg="mail" href="javascript://" id="mail">Email</a>
   </ul>
 </div>
-
-<script>
-  $('.links a')
-  .on('mouseover', function (ev) {
-    var bg = $(ev.target).data('bg');
-    $('.background').removeClass('on');
-    $('.background.' + bg).addClass('on');
-  })
-  .on('mouseout', function () {
-    $('.background.default').addClass('on');
-  });
-
-  $('#mail').attr('href', ['mai', 'lto:', 'hello', '@', 'qzb', '.', 'me'].join(''));
-</script>
