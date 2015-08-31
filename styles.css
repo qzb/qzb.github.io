@@ -44,6 +44,10 @@
     background-image: url(backgrounds/gplus-1920.jpg);
 }
 
+.background.discogs {
+    background-image: url(backgrounds/discogs-1920.jpg);
+}
+
 .intro {
     position: fixed;
     top: 30%;
